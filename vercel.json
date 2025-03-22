@@ -3,3 +3,16 @@
     { "source": "/api/socket", "destination": "/api/socket.js" }
   ]
 }
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/server.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "public/*",
+            "use": "@vercel/static"
+        }
+    ]
+}
